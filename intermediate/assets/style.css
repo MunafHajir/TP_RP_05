@@ -4,21 +4,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-
-/* Tag Selector */
-h1, label {
+    /* Font  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Id Selector */
+h1, label {
+
+}
+
 #login {
-    color: blue;
+    color: #402E7A;
 }
 
 
-/* Class Selector */
-.form-input {
+/* Login */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.login-heading{
+    padding: 20px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form-input {
     padding: 10px 20px;
 }
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #4B70F5;
+    border: none;
+    color: #FFF;
+}
+/* End Login */
+
