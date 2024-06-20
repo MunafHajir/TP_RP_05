@@ -7,11 +7,10 @@
 
     /* Font  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-h1, label {
+    list-style: none;
 
 }
+
 
 #login {
     color: #402E7A;
@@ -51,3 +50,28 @@ h1, label {
 }
 /* End Login */
 
+/* Navbar  */
+.nav {
+    display: flex;
+    background-color: #402E7A;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav > div {
+    padding: 10px;
+}
+
+
+.nav > div > ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav > div > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Navbar End */
