@@ -17,7 +17,7 @@
     /* Font  */
     font-family: 'Poppins';
     list-style: none;
-
+    font-size: 16px; 
 }
 
 
@@ -25,10 +25,21 @@
     color: var(--primary);
 }
 
-button {
+button, input[type="submit"] {
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+.container {
+    padding: 20px 40px;
+    margin: 0 auto
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
 }
 
 /* Login */
@@ -72,8 +83,12 @@ button {
     color: var(--white);
 }
 
+.logo-text {
+    font-size: 1.5rem;
+}
+
 .nav > div {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 
@@ -93,11 +108,18 @@ button {
 /* Main */
 .main {
     display: flex;
+    
     padding: 30px;
-    width: 100%;
+    height: 70vh;
     background-color: var(--secondary);
 }
 
+.main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
 .main-right {
     display: flex;
     flex-direction: column;
@@ -107,14 +129,30 @@ button {
     width: 60%;
 }
 
+.main-text {
+    font-size: 2rem;
+}
+
 .main-img {
     height: 250px;
     width: auto;
 }
 
-.main-btn {
-    background-color: var(--primary);
-    color: var(--white);
-    border-radius: 10px;
-}
+
 /* Main End */
+
+/* Enquiry Form */
+
+.enquiry-form, .enquiry-form > form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--grey-white);
+    margin: 0 60px;
+}
+.enquiry-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Enquiry ENd */

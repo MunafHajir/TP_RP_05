@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-    
-    <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
-    <nav class="nav">
-        <div>
-            <h1>Logo</h1>
-        </div>
 
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Service</li>
-            </ul>
-        </div>
-       
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <nav class="nav container">
+      <div>
+        <h1 class="logo-text">Logo</h1>
+      </div>
+
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Service</li>
+        </ul>
+      </div>
     </nav>
 
-    <main class="main">
-        <div class="main-left">
-            <img src="./assets/images/main-section.jpg" alt="main-img" class="main-img"/>
-        </div>
-        <div class="main-right">
-            <h1>Traveller</h1>
-            <button class="main-btn">Enquire Now</button>
-        </div>
+    <main class="main  container">
+      <div class="main-left">
+        <img
+          src="./assets/images/main-section.jpg"
+          alt="main-img"
+          class="main-img"
+        />
+      </div>
+      <div class="main-right">
+        <h1 class="main-text">Traveller</h1>
+        <button class="btn-primary">Enquire Now</button>
+      </div>
     </main>
-
-</body>
+    <section class="container enquiry-form">
+      <form>
+        <div class="enquiry-input">
+          <label> Email </label>
+          <input />
+        </div>
+        <div class="enquiry-input">
+            <label> Full Name </label>
+            <input />
+          </div>
+          <div class="enquiry-input">
+            <input type="submit" class="btn-primary"/>
+          </div>
+      </form>
+    </section>
+  </body>
 </html>
