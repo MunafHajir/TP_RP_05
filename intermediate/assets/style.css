@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #254336;
+    --secondary: #B7B597;
+    --grey-white: #EEE;
+    --white: #fff;
+}
+
 /* Global Selector */
 * {
     /* CSS Resetting */
@@ -6,16 +15,21 @@
     box-sizing: border-box;
 
     /* Font  */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins';
     list-style: none;
 
 }
 
 
 #login {
-    color: #402E7A;
+    color: var(--primary);
 }
 
+button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 /* Login */
 
@@ -44,18 +58,18 @@
 
 .login-button {
     padding: 10px 20px;
-    background-color: #4B70F5;
+    background-color: var(--secondary);
     border: none;
-    color: #FFF;
+    color: var(--white);
 }
 /* End Login */
 
 /* Navbar  */
 .nav {
     display: flex;
-    background-color: #402E7A;
+    background-color: var(--primary);
     justify-content: space-between;
-    color: white;
+    color: var(--white);
 }
 
 .nav > div {
@@ -77,5 +91,30 @@
 /* Navbar End */
 
 /* Main */
+.main {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--secondary);
+}
 
+.main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.main-img {
+    height: 250px;
+    width: auto;
+}
+
+.main-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+}
 /* Main End */
