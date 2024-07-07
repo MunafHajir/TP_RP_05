@@ -96,3 +96,33 @@ const num = [1,2,3,5,6]
 
 let [first, second, ,fourth] = num
 console.log(first, second, fourth)
+
+
+const contactNo = [99999, 111111, 888888];
+
+// const updateValue = (value, index) => {
+//   return '+91' + value;
+// }
+
+const updatedContactNo = contactNo.map(value => '+91' + value);
+
+console.log(updatedContactNo);
+
+contactNo.forEach(
+  (value) => {
+    console.log("for", value)
+  }
+)
+
+// includes
+// forEach
+// filter
+// reduce
+// splice
+// join
+
+
+// string method
+// object method
+
+console.log("Munaf Arun Smita Sandesh".split(' '))
